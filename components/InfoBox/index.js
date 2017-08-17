@@ -28,6 +28,7 @@ export default class InfoBox extends React.Component {
             border-top: 1px solid #ccc;
             color: #999;
             padding: 10px;
+            text-align: center;
           }
         `}</style>
 
