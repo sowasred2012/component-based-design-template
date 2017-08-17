@@ -1,10 +1,10 @@
 import React from 'react'
 import { shape, string } from 'prop-types'
-import Avatar from '../Avatar'
-import Icon from '../Icon'
-import InfoBox from '../InfoBox'
+import Avatar from '../../../Avatar'
+import Icon from '../../../Icon'
+import InfoBox from '../../../InfoBox'
 
-export default class MeritTransferBox extends React.Component {
+export default class Merit extends React.Component {
   static propTypes = {
     sender: shape({ name: string.isRequired, imageUrl: string.isRequired }),
     receiver: shape({ name: string.isRequired, imageUrl: string.isRequired }),
@@ -38,19 +38,21 @@ export default class MeritTransferBox extends React.Component {
           }
         `}</style>
 
-        <InfoBox message={`"${this.props.message}"`}>
-          <div className="columns">
-            <div className="column">
-              <Avatar name={this.props.sender.name} imageUrl={this.props.sender.imageUrl} />
+        <div className="merit">
+          <InfoBox message={`"${this.props.message}"`}>
+            <div className="columns">
+              <div className="column">
+                <Avatar name={this.props.sender.name} imageUrl={this.props.sender.imageUrl} />
+              </div>
+              <div className="column">
+                <span className="plus">+1 <Icon name="arrow-right" /></span>
+              </div>
+              <div className="column">
+                <Avatar name={this.props.receiver.name} imageUrl={this.props.receiver.imageUrl} />
+              </div>
             </div>
-            <div className="column">
-              <span className="plus">+1 <Icon name="arrow-right" /></span>
-            </div>
-            <div className="column">
-              <Avatar name={this.props.receiver.name} imageUrl={this.props.receiver.imageUrl} />
-            </div>
-          </div>
-        </InfoBox>
+          </InfoBox>
+        </div>
       </div>
     )
   }
