@@ -12,9 +12,10 @@ export default class InfoBox extends React.Component {
       <div>
         <style jsx>{`
           .info-box {
-            font-family: Helvetica, sans-serif;
             border: 1px solid #ccc;
             border-radius: 5px;
+            font-family: Helvetica, sans-serif;
+            overflow: hidden;
             width: 100%;
           }
 
