@@ -16,20 +16,23 @@ export default class Avatar extends React.Component {
       <div>
         <style jsx>{`
           .avatar {
+            align-items: center;
+            display: flex;
             font-family: Helvetica, sans-serif;
-            width: 120px;
+            flex-direction: row;
+            justify-content: center;
           }
 
           img {
             border-radius: 50%;
-            display: block;
-            width: 100%;
+            width: 40px;
+            vertical-align: baseline;
           }
 
           span {
-            display: block;
-            margin-top: 12px;
             text-align: center;
+            margin-left: 12px;
+            vertical-align: center;
           }
         `}</style>
 
