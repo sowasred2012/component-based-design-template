@@ -27,6 +27,15 @@ export default class Merit extends React.Component {
             text-align: center;
           }
 
+          .column-left,
+          .column-right {
+            flex: 3;
+          }
+
+          .column-center {
+            flex: 1;
+          }
+
           .avatar {
             position: relative;
             margin: auto;
@@ -41,13 +50,13 @@ export default class Merit extends React.Component {
         <div className="merit">
           <InfoBox message={`"${this.props.message}"`}>
             <div className="columns">
-              <div className="column">
+              <div className="column column-left">
                 <Avatar name={this.props.sender.name} imageUrl={this.props.sender.imageUrl} />
               </div>
-              <div className="column">
+              <div className="column column-center">
                 <span className="plus">+1 <Icon name="arrow-right" /></span>
               </div>
-              <div className="column">
+              <div className="column column-right">
                 <Avatar name={this.props.receiver.name} imageUrl={this.props.receiver.imageUrl} />
               </div>
             </div>
