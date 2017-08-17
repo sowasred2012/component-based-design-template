@@ -14,6 +14,7 @@ export default class MadeHeader extends React.Component {
           .header {
             font-family: Helvetica, sans-serif;
             font-size: 42px;
+            margin-bottom: 20px;
           }
         `}</style>
 
