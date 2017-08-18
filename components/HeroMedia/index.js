@@ -13,7 +13,7 @@ export default class HeroMedia extends React.Component {
             background-position: center;
             background-size: cover;
             display: flex;
-            height: 600px;
+            height: 650px;
             justify-content: left;
           }
 
