@@ -3,6 +3,7 @@ import React from 'react'
 
 export default class HeroMedia extends React.Component {
   render () {
+    console.log(this.props.title)
     return (
       <div className="hero-media">
         <style jsx>{`
@@ -41,7 +42,7 @@ export default class HeroMedia extends React.Component {
           }
 
           .hero-meta {
-            margin-top: -50px;
+            min-height: 300px;
             width: 80%;
           }
 

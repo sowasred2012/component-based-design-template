@@ -2,9 +2,17 @@ import React from 'react'
 
 
 export default class MediaTile extends React.Component {
+  handleClick (e) {
+    e.preventDefault()
+    this.props.onClick(this.props.title)
+  }
+
   render () {
     return (
-      <div className={`mediaTile active--${this.props.selected}`}>
+      <div
+        className={`mediaTile active--${this.props.selected}`}
+        onClick={this.handleClick.bind(this)}
+      >
         <style jsx>{`
           .mediaTile {
             -webkit-box-shadow: 0px 0px 9px 8px rgba(0, 0, 0 ,0);
@@ -28,9 +36,8 @@ export default class MediaTile extends React.Component {
           }
         `}</style>
 
-        <img src={this.props.imageUrl} alt={this.props.name} />
+        <img src={this.props.imageUrl} alt={this.props.title} />
       </div>
     )
   }
 }
-

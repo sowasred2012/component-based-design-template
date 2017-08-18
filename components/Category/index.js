@@ -28,7 +28,8 @@ export default class Category extends React.Component {
           <MediaTile
             selected={media.selected}
             imageUrl={media.image}
-            name={media.name}
+            title={media.title}
+            onClick={this.props.onSelectMedia}
           />
         )}
       </div>
