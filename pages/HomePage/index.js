@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroMedia from '../../components/HeroMedia'
 import Category from '../../components/Category'
+import Header from '../../components/Header'
 
 export default class HomePage extends React.Component {
   render () {
@@ -17,6 +18,7 @@ export default class HomePage extends React.Component {
             top: 0;
           }
         `}</style>
+        <Header text={this.props.serviceTitle} />
         <HeroMedia
           title={this.props.heroTitle}
           description={this.props.heroDescription}

@@ -4,7 +4,7 @@ import logo from './logo.png'
 export default class MadeLogo extends React.Component {
   render () {
     return (
-      <img src={logo} alt="Made Tech" />
+      <img height="23px" src={logo} alt="Made Tech" />
     )
   }
 }

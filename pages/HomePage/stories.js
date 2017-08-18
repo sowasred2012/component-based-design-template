@@ -7,6 +7,7 @@ import { one, two, three, four, five, six, seven, eight, nine } from '../../comp
 storiesOf('HomePage', module)
   .add('default', () =>
     <HomePage
+      serviceTitle="MadeFlix"
       heroTitle="A Clockwork Orange"
       heroDescription="In an England of the future, Alex (Malcolm McDowell) and his Droogs spend their nights getting high at the Korova Milkbar before embarking on a little of the old ultraviolence, while jauntily warbling Singin' in the Rain."
       heroImage={heroImage}
