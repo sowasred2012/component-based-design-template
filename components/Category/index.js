@@ -14,7 +14,7 @@ export default class Category extends React.Component {
             padding: 0 30px 8px;
           }
 
-          h2 {
+          h3 {
             font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
             font-size: 16px;
             margin: 5px 0 15px;
@@ -22,7 +22,7 @@ export default class Category extends React.Component {
           }
         `}</style>
 
-        <h2>{this.props.title}</h2>
+        <h3>{this.props.title}</h3>
 
         {this.props.media.map(media =>
           <MediaTile

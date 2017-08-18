@@ -28,8 +28,20 @@ export default class HeroMedia extends React.Component {
             height: 100%;
           }
 
+          h2 {
+            font-size: 27px;
+            text-transform: uppercase;
+            margin: 5px 0;
+          }
+
+          p {
+            margin-top: 5px;
+            line-height: 1.4;
+          }
+
           .hero-meta {
             width: 80%;
+            margin-top: -50px;
           }
 
           .hero-play {

@@ -24,6 +24,7 @@ export default class MediaTile extends React.Component {
             -webkit-box-shadow: 0px 0px 9px 8px rgba(255,0,0,0.9);
             -moz-box-shadow: 0px 0px 9px 8px rgba(255,0,0,0.9);
             box-shadow: 0px 0px 9px 8px rgba(255,0,0,0.9);
+            margin: 5px 10px 0;
           }
         `}</style>
 
