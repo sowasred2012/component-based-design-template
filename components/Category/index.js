@@ -10,12 +10,15 @@ export default class Category extends React.Component {
             overflow-x:  scroll;
             padding: 4px;
             white-space: nowrap;
+            margin-top: -130px;
+            padding: 0 30px 8px;
           }
 
           h2 {
             font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
             font-size: 16px;
             margin: 5px 0 15px;
+            color: #fff;
           }
         `}</style>
 

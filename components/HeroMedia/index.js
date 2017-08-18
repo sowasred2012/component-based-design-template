@@ -12,12 +12,8 @@ export default class HeroMedia extends React.Component {
             background-image: url(${this.props.image});
             background-position: center;
             background-size: cover;
-            bottom: 0;
             display: flex;
-            left: 0;
-            position: absolute;
-            right: 0;
-            top: 0;
+            height: 600px;
           }
 
           .hero-meta-container {
