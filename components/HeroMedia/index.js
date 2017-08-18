@@ -8,40 +8,41 @@ export default class HeroMedia extends React.Component {
         <style jsx>{`
           .hero-media {
             align-items: center;
-            justify-content: left;
             background-image: url(${this.props.image});
             background-position: center;
             background-size: cover;
             display: flex;
             height: 600px;
+            justify-content: left;
           }
 
           .hero-meta-container {
             align-items: center;
+            background: linear-gradient(90deg, #000000 0%, rgba(255,255,255,0) 100%);
             color: #fff;
             display: flex;
             font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-            justify-content: left;
-            margin: 0 30px;
-            width: 50%;
-            background: linear-gradient(90deg, #000000 0%, rgba(255,255,255,0) 100%);
             height: 100%;
+            justify-content: left;
+            margin: 0;
+            padding-left: 30px;
+            width: 50%;
           }
 
           h2 {
             font-size: 27px;
-            text-transform: uppercase;
             margin: 5px 0;
+            text-transform: uppercase;
           }
 
           p {
-            margin-top: 5px;
             line-height: 1.4;
+            margin-top: 5px;
           }
 
           .hero-meta {
-            width: 80%;
             margin-top: -50px;
+            width: 80%;
           }
 
           .hero-play {
